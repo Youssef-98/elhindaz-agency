@@ -6,7 +6,7 @@ import { Wrapper, Image, BottomEdgeDown, BottomEdgeUp } from "./pageStyles/pageS
 import { COLORS } from "../constants"
 import { RiMailSendFill, RiPhoneLine, RiUserLocationLine } from 'react-icons/ri';
 
-const Contact = (props) => {
+const ContactPage = (props) => {
   const {wpcontent: {
     page: {
       contactMeta: {
@@ -87,4 +87,4 @@ const Contact = (props) => {
   );
 }
 
-export default Contact;
+export default ContactPage;

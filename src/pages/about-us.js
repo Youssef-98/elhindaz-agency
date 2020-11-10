@@ -5,7 +5,7 @@ import SEO from "../components/Seo"
 import { Wrapper, Image, BottomEdgeDown, BottomEdgeUp } from "./pageStyles/pageStyles"
 import { COLORS } from "../constants"
 
-const AboutUs = (props) => {
+const AboutUsPage = (props) => {
     const {wpcontent: {
       page: {
         aboutUsMeta: {
@@ -54,4 +54,4 @@ const AboutUs = (props) => {
     );
 }
 
-export default AboutUs;
+export default AboutUsPage;
