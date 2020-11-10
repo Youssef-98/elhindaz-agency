@@ -1,15 +1,9 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import {
-  Wrapper,
-  Image,
-  Artist,
-  BottomEdgeDown,
-  BottomEdgeUp,
-} from "./pageStyles/pageStyles"
+import { Wrapper, Image, Artist, BottomEdgeDown, BottomEdgeUp } from "./pageStyles/pageStyles"
 import { COLORS } from "../constants"
 
 const IndexPage = () => {
