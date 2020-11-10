@@ -20,14 +20,14 @@ const AboutUs = (props) => {
             aboutUsMeta {
               aboutUsDescription
               aboutUsPageHeaderPicture {
-                  sourceUrl
-                  imageFile {
-                    childImageSharp {
-                      fluid(quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp
-                      }
+                sourceUrl
+                imageFile {
+                  childImageSharp {
+                    fluid(quality: 100) {
+                      ...GatsbyImageSharpFluid_withWebp
                     }
                   }
+                }
                 altText
               }
             }
@@ -38,6 +38,7 @@ const AboutUs = (props) => {
 
     return (
         <Layout>
+          <SEO title="About Us" />
           <Wrapper descriptionColor={COLORS.PRIMARY}>
             <div className="banner">
               <Image fluid={aboutUsPageHeaderPicture.imageFile.childImageSharp.fluid} alt={aboutUsPageHeaderPicture.altText} />
